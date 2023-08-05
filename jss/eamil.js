@@ -3,8 +3,12 @@ var masterdatabase=[
     {email:"priynak",password:"priyank"},
     {email:"sarthak",password:"sarthak"},
     {email:"priya",password:"priya"},
-    {email:"ansh",passowrd:"ansh"}
+    {email:"admin",passowrd:"admin"}
      ]
+function submit(){
+  window.alert("hi");
+}
+
 function submit1(){
     let em=document.getElementById("user").value;
     em=em.toLowerCase();
@@ -19,7 +23,8 @@ function submit1(){
             }
             else
             {
-                let x=document.getElementById("para").innerHTML="worng Id or Password";
+                let x=document.getElementById("para").innerHTML="Wrong Id or Password";
+                document.getElementById("para").style.color="red";
                 break;
             }
         }   
